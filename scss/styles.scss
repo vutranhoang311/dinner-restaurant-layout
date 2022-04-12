@@ -1,0 +1,12 @@
+@import "./_variable";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  @include font-text($font-family-2,16px,400,$color-white-100);
+  background-color: #23221C;
+  background: #23221C;
+}
