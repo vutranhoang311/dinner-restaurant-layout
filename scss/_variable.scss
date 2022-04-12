@@ -4,7 +4,7 @@ $font-family-2: "Oswald", sans-serif; // dùng cho text toàn bộ
 $color-black-100: #000;
 $color-black-400: #232212;
 $color-white-100: #fff;
-
+$color-orange-300: #ff6600;
 @mixin font-text($font-family, $font-size, $font-weight, $color) {
   font-family: $font-family;
   font-size: $font-size;
@@ -12,3 +12,6 @@ $color-white-100: #fff;
   color: $color;
 }
 
+@mixin button{
+  
+}
