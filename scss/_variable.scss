@@ -1,11 +1,13 @@
-$font-family-1: "Pacifico", cursive; // Dùng cho header chữ kiểu
-$font-family-2: "Oswald", sans-serif; // dùng cho text toàn bộ
+$font-family-1: "Pacifico", cursive; // h1 section
+$font-family-2: "Oswald", sans-serif; // all text
 
 $color-black-100: #000;
 $color-black-400: #232212;
 $color-white-100: #fff;
 $color-orange-300: #ff6600;
-@mixin font-text($font-family, $font-size, $font-weight, $color) {
+
+$color-gray-100: #c2d0da;
+@mixin text-format($font-family, $font-size, $font-weight, $color) {
   font-family: $font-family;
   font-size: $font-size;
   font-weight: $font-weight;
