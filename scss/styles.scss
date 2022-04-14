@@ -198,20 +198,22 @@ header {
             }
         }
     }
-    .video-wrapper {
-        height: 400px;
-        width: 100%;
-        margin-top: 64px;
-        padding-right: 15px;
-        padding-left: 15px;
-        margin-right: auto;
-        margin-left: auto;
-    }
-    .video {
-        background-image: url(../images/banner3.jpg);
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        background-position: center;
-    }
+}
+
+.video-wrapper {
+    height: 700px;
+    width: 100%;
+    margin-top: 64px;
+    padding-right: 64px;
+    padding-left: 64px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.video {
+    background-image: url(../images/banner3.jpg);
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-position: center;
 }

@@ -235,17 +235,17 @@ header .nav-search-bar nav .fa-navicon:before {
           box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-.count .video-wrapper {
-  height: 400px;
+.video-wrapper {
+  height: 700px;
   width: 100%;
   margin-top: 64px;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 64px;
+  padding-left: 64px;
   margin-right: auto;
   margin-left: auto;
 }
 
-.count .video {
+.video {
   background-image: url(../images/banner3.jpg);
   height: 100%;
   width: 100%;
