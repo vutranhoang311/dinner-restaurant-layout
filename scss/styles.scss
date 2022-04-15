@@ -88,7 +88,7 @@ header {
         }
     }
     .color-overlay {
-        background-image: linear-gradient( to right, $color-orange-300, $color-black-400);
+        background-image: linear-gradient(to right, $color-orange-300, $color-black-400);
         opacity: 0.7;
         position: absolute;
         top: 0;
@@ -134,7 +134,7 @@ header {
             font-family: $font-family-2;
             button {
                 margin-right: 16px;
-                @include button( 6px,
+                @include button(6px,
                 12px 45px,
                 transparent,
                 2px solid #fff,
@@ -146,7 +146,7 @@ header {
                 }
             }
             .btn-right {
-                @include button( 6px,
+                @include button(6px,
                 12px 45px,
                 $color-orange-300,
                 none,
@@ -174,7 +174,7 @@ header {
                 margin-right: 32px;
                 box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
                 i {
-                    @include icon( $color-orange-300,
+                    @include icon($color-orange-300,
                     50%,
                     $color-white-100,
                     68px,
@@ -213,7 +213,8 @@ header {
 .video {
     background-image: url(../images/banner3.jpg);
     min-height: 500px;
-    width: 100%;
-    object-fit: cover;
+    width: 80%;
+    margin: 0 auto;
+    background-size: cover;
     background-position: center;
 }

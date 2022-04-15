@@ -248,9 +248,9 @@ header .nav-search-bar nav .fa-navicon:before {
 .video {
   background-image: url(../images/banner3.jpg);
   min-height: 500px;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  width: 80%;
+  margin: 0 auto;
+  background-size: cover;
   background-position: center;
 }
 /*# sourceMappingURL=styles.css.map */
