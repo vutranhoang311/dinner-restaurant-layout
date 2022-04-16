@@ -206,15 +206,163 @@ header {
     margin-top: 64px;
     padding-right: 64px;
     padding-left: 64px;
-    margin-right: auto;
-    margin-left: auto;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    .video {
+        background-image: url(../images/banner3.jpg);
+        min-height: 400px;
+        width: 80%;
+        margin-left: 0 auto;
+        background-size: cover;
+        background-position: center;
+        align-items: center;
+        position: relative;
+    }
+    .play {
+        background-color: $color-white-100;
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        font-size: 26px;
+        justify-content: center;
+        display: flex;
+        position: absolute;
+        border: transparent;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        i {
+            color: $color-orange-300;
+            margin-top: 28px;
+        }
+        &:hover {
+            animation: ripple 1.5s alternate infinite ease-in;
+        }
+        @keyframes ripple {
+            0% {
+                transform: scale(0.8);
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            }
+            100% {
+                transform: scale(1.2);
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+            }
+        }
+    }
 }
 
-.video {
-    background-image: url(../images/banner3.jpg);
-    min-height: 500px;
-    width: 80%;
-    margin: 0 auto;
-    background-size: cover;
-    background-position: center;
+.blog {
+    height: 100%;
+    background: $color-white-110;
+    width: 100%;
+    margin-top: 64px;
+    .title {
+        text-align: center;
+        h5 {
+            padding-top: 16px;
+            @include font-text($font-family-1,
+            20px,
+            400,
+            $color-orange-300);
+        }
+    }
+    .row {
+        height: 100%;
+        text-align: center;
+        .col {
+            justify-content: center;
+            height: 100%;
+            cursor: pointer;
+            .images {
+                margin-top: 16px;
+                img {
+                    height: 200px;
+                    border-radius: 4px;
+                    position: relative;
+                }
+            }
+            .text {
+                font-family: $font-family-2;
+                display: flex;
+                position: absolute;
+                margin-top: -40px;
+                padding: 0px 64px;
+                color: $color-white-100;
+                cursor: pointer;
+                span {
+                    background-color: $color-orange-300;
+                    border-radius: 35px;
+                    padding: 3px 20px;
+                    font-weight: 700;
+                }
+                .icon {
+                    margin-left: 24px;
+                    display: flex;
+                    div {
+                        font-weight: 400;
+                    }
+                    i {
+                        margin-right: 8px;
+                        padding: 4px;
+                    }
+                }
+            }
+            .info {
+                text-align: justify;
+                margin-left: 20px;
+                p {
+                    font-weight: 700;
+                    margin-top: 25px;
+                    margin-bottom: 15px;
+                    font-size: 24px;
+                }
+            }
+            .author {
+                display: flex;
+                align-items: center;
+                margin: 24px;
+                font-weight: 700;
+                img {
+                    height: 40px;
+                    margin-right: 8px;
+                }
+                span {
+                    margin-left: 32px;
+                    display: flex;
+                    i {
+                        margin: 5px;
+                    }
+                    &:hover {
+                        color: $color-orange-300;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.testimonials {
+    margin-top: 32px;
+    height: 100%;
+    .title {
+        text-align: center;
+        span {
+            @include font-text($font-family-1,
+            400,
+            20px,
+            $color-orange-300);
+        }
+    }
+    .carousel {
+        padding: 256px;
+        .carousel-inner {
+            height: 300px;
+            .carousel-item {
+                height: 400px;
+                img {
+                    height: 40px;
+                }
+            }
+        }
+    }
 }
