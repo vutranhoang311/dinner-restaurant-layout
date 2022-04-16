@@ -7,7 +7,7 @@
 
 body {
   font-size: 16px;
-  background-color: $color-black-400;
+  background-color: $color-black-500;
   @include text-format($font-family-2, 1rem, 400, $color-white-100);
 }
 header {
@@ -28,7 +28,6 @@ header {
         height: 100%;
         background-color: $color-black-400;
         @include text-format($font-family-2, 1rem, 300, $color-white-100);
-
       }
       i {
         position: absolute;
@@ -52,13 +51,14 @@ header {
 
 .banner {
   background-image: url("/images/banner1.jpg");
-  background-position: initial;
+  background-position: center center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   filter: contrast(1.1);
   width: 100%;
-  height: 40rem;
+  height: 100vh;
+  min-height: 40rem;
   position: relative;
   .title {
     // z-index: 1;
@@ -80,7 +80,7 @@ header {
       border-radius: 10px;
       font-weight: 500;
       transition: all 0.5s;
-      cursor: pointer;
+      // cursor: pointer;
       &:hover {
         color: $color-orange-300;
         background-color: $color-white-100;
@@ -126,11 +126,11 @@ header {
   .row {
     background-color: $color-orange-300;
     height: fit-content;
-    &>*{
+    & > * {
       padding-left: 0;
       padding-right: 0;
     }
-    .left-col .item{
+    .left-col .item {
       height: 100%;
       min-height: 550px;
       background: url(/images/banner3.jpg);
@@ -191,6 +191,65 @@ header {
               color: #ffc600;
             }
           }
+        }
+      }
+    }
+  }
+}
+
+.category {
+  padding: 3rem 0;
+  .title {
+    text-align: center;
+    margin-bottom: 2rem;
+    span {
+      @include text-format($font-family-1, 1.5rem, 400, $color-orange-300);
+    }
+    h1 {
+      @include text-format($font-family-2, 2.5rem, 400, $color-white-100);
+    }
+  }
+  .menu-main {
+    margin-left: -1rem;
+    margin-right: -1rem;
+    & > * {
+      width: calc(100% / 3);
+      margin-bottom: 2rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      border: none;
+    }
+    .card {
+      background-color: $color-black-500;
+      .background-card {
+        position: relative;
+        .color-overlay {
+          content: "";
+          width: 100%;
+          height: 100%;
+          background-image: linear-gradient(
+            to bottom,
+            transparent,
+            rgba(000, 000, 000, 0.5)
+          );
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 5;
+        }
+      }
+
+      .card-img-overlay {
+        z-index: 6;
+        bottom: 0;
+        left: 10%;
+        top: initial;
+        right: initial;
+        .card-title {
+          @include text-format($font-family-2, 1.5rem, 400, $color-white-100);
+        }
+        .card-text {
+          @include text-format($font-family-2, 1.25rem, 400, $color-yellow-300);
         }
       }
     }
