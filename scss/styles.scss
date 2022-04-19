@@ -633,56 +633,120 @@ header {
   }
 }
 
+// .testimonials {
+//   margin-top: 32px;
+//   height: 100%;
+//   .title {
+//     text-align: center;
+//     span {
+//       @include font-text($font-family-1, 400, 20px, $color-orange-300);
+//     }
+//   }
+//   .carousel-indicators {
+//     height: 16px;
+//     button {
+//       background: $color-orange-300;
+//       border-radius: 50%;
+//       width: 16px;
+//       margin-right: 16px;
+//     }
+//   }
+//   .carousel-inner {
+//     .carousel-item {
+//       min-height: 400px;
+//       margin-top: 32px;
+//       .thumb {
+//         display: flex;
+//         justify-content: center;
+//       }
+//       img {
+//         height: 100%;
+//         max-width: 100px;
+//         margin-top: 16px;
+//         margin-bottom: 32px;
+//       }
+//       .carousel-caption {
+//         i {
+//           font-size: 16px !important;
+//         }
+//         color: rgba(22, 28, 45, 0.7);
+//         height: fit-content;
+//         font-size: 18px;
+//         h3,
+//         p {
+//           text-align: center;
+//         }
+//         h5 {
+//           font-style: 900;
+//         }
+//       }
+//     }
+//   }
+// }
+
 .testimonials {
-  margin-top: 32px;
-  height: 100%;
-  .title {
-    text-align: center;
-    span {
-      @include font-text($font-family-1, 400, 20px, $color-orange-300);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    // height: 100%;
+    .title {
+      text-align: center;
+      @include font-text($font-family-2, 2.5rem, 400, $color-gray-100);
+  
+      span {
+        @include font-text($font-family-1, 400, 20px, $color-orange-300);
+      }
     }
-  }
-  .carousel-indicators {
-    height: 16px;
-    button {
-      background: $color-orange-300;
-      border-radius: 50%;
-      width: 16px;
-      margin-right: 16px;
-    }
-  }
-  .carousel-inner {
-    .carousel-item {
-      min-height: 400px;
-      margin-top: 32px;
-      .thumb {
-        display: flex;
+    .carousel {
+      .carousel-indicators {
+        bottom: 0;
+        margin-bottom: -2rem;
+  
+        button {
+          height: 15px;
+          width: 15px;
+          border-radius: 50%;
+        }
+      }
+      .carousel-inner {
         justify-content: center;
-      }
-      img {
-        height: 100%;
-        max-width: 100px;
-        margin-top: 16px;
-        margin-bottom: 32px;
-      }
-      .carousel-caption {
-        i {
-          font-size: 16px !important;
-        }
-        color: rgba(22, 28, 45, 0.7);
-        height: fit-content;
-        font-size: 18px;
-        h3,
-        p {
-          text-align: center;
-        }
-        h5 {
-          font-style: 900;
+        .carousel-item {
+          height: auto;
+          img {
+            object-fit: cover;
+            height: 5rem;
+            width: 5rem;
+            border-radius: 50%;
+          }
+          .carousel-caption {
+            position: initial;
+            max-width: 550px;
+            margin: auto auto;
+            .top {
+              i {
+                color: $color-orange-300;
+                font-size: 2rem;
+              }
+              h1 {
+                @include font-text($font-family-2, 1.5rem, 400, $color-white-100);
+              }
+              p {
+                @include font-text($font-family-2, 1.0rem, 300, $color-gray-100);
+              }
+            }
+            .bottom {
+              h1 {
+                @include font-text($font-family-2, 1.5rem, 400, $color-white-100);
+              }
+              p {
+                @include font-text($font-family-2, 1.0rem, 300, $color-gray-100);
+              }
+            }
+          }
         }
       }
     }
   }
-}
 
 footer {
   max-height: 100%;

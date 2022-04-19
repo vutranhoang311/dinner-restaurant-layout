@@ -836,12 +836,17 @@ header .nav-search-bar nav .fa-navicon:before {
 }
 
 .testimonials {
-  margin-top: 32px;
-  height: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
 }
 
 .testimonials .title {
   text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #c2d0da;
 }
 
 .testimonials .title span {
@@ -851,57 +856,72 @@ header .nav-search-bar nav .fa-navicon:before {
   color: #ff6600;
 }
 
-.testimonials .carousel-indicators {
-  height: 16px;
+.testimonials .carousel .carousel-indicators {
+  bottom: 0;
+  margin-bottom: -2rem;
 }
 
-.testimonials .carousel-indicators button {
-  background: #ff6600;
+.testimonials .carousel .carousel-indicators button {
+  height: 15px;
+  width: 15px;
   border-radius: 50%;
-  width: 16px;
-  margin-right: 16px;
 }
 
-.testimonials .carousel-inner .carousel-item {
-  min-height: 400px;
-  margin-top: 32px;
-}
-
-.testimonials .carousel-inner .carousel-item .thumb {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.testimonials .carousel .carousel-inner {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-.testimonials .carousel-inner .carousel-item img {
-  height: 100%;
-  max-width: 100px;
-  margin-top: 16px;
-  margin-bottom: 32px;
+.testimonials .carousel .carousel-inner .carousel-item {
+  height: auto;
 }
 
-.testimonials .carousel-inner .carousel-item .carousel-caption {
-  color: rgba(22, 28, 45, 0.7);
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  font-size: 18px;
+.testimonials .carousel .carousel-inner .carousel-item img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
 }
 
-.testimonials .carousel-inner .carousel-item .carousel-caption i {
-  font-size: 16px !important;
+.testimonials .carousel .carousel-inner .carousel-item .carousel-caption {
+  position: initial;
+  max-width: 550px;
+  margin: auto auto;
 }
 
-.testimonials .carousel-inner .carousel-item .carousel-caption h3,
-.testimonials .carousel-inner .carousel-item .carousel-caption p {
-  text-align: center;
+.testimonials .carousel .carousel-inner .carousel-item .carousel-caption .top i {
+  color: #ff6600;
+  font-size: 2rem;
 }
 
-.testimonials .carousel-inner .carousel-item .carousel-caption h5 {
-  font-style: 900;
+.testimonials .carousel .carousel-inner .carousel-item .carousel-caption .top h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+.testimonials .carousel .carousel-inner .carousel-item .carousel-caption .top p {
+  font-family: "Oswald", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #c2d0da;
+}
+
+.testimonials .carousel .carousel-inner .carousel-item .carousel-caption .bottom h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+.testimonials .carousel .carousel-inner .carousel-item .carousel-caption .bottom p {
+  font-family: "Oswald", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #c2d0da;
 }
 
 footer {
