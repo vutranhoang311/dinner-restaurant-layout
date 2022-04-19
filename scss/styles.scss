@@ -412,6 +412,7 @@ header {
       button {
         margin-right: 16px;
         margin-bottom: 1rem;
+        transition: all 0.5s;
         @include button(6px, 12px 45px, transparent, 2px solid #fff, $color-white-100, 700);
         &:hover {
           background-color: $color-white-100;
@@ -420,6 +421,9 @@ header {
       }
       .btn-right {
         @include button(6px, 12px 45px, $color-orange-300, none, $color-white-100, 700);
+        &:hover {
+          opacity: 0.5;
+        }
       }
     }
   }
@@ -523,8 +527,7 @@ header {
   height: 100%;
   background: $color-black-300;
   width: 100%;
-  margin-top: 64px;
-  padding: 3rem initial;
+  padding: 3rem 0;
   .title {
     text-align: center;
     span {
@@ -596,8 +599,8 @@ header {
         }
       }
       .authors {
-          margin-top: 1rem;
-          margin-bottom: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
         .author {
           display: flex;
           align-items: center;
@@ -685,83 +688,93 @@ header {
 // }
 
 .testimonials {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    padding-bottom: 2rem;
-    // height: 100%;
-    .title {
-      text-align: center;
-      @include font-text($font-family-2, 2.5rem, 400, $color-gray-100);
-  
-      span {
-        @include font-text($font-family-1, 400, 20px, $color-orange-300);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  // height: 100%;
+  .title {
+    text-align: center;
+    @include font-text($font-family-2, 2.5rem, 400, $color-gray-100);
+
+    span {
+      @include font-text($font-family-1, 400, 20px, $color-orange-300);
+    }
+  }
+  .carousel {
+    .carousel-indicators .active {
+      background-color: $color-orange-300;
+    }
+    .carousel-indicators {
+      bottom: 0;
+      margin-bottom: -2rem;
+
+      button {
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
       }
     }
-    .carousel {
-      .carousel-indicators {
-        bottom: 0;
-        margin-bottom: -2rem;
-  
-        button {
-          height: 15px;
-          width: 15px;
+    .carousel-inner {
+      justify-content: center;
+      .carousel-item {
+        height: auto;
+        img {
+          object-fit: cover;
+          height: 5rem;
+          width: 5rem;
           border-radius: 50%;
         }
-      }
-      .carousel-inner {
-        justify-content: center;
-        .carousel-item {
-          height: auto;
-          img {
-            object-fit: cover;
-            height: 5rem;
-            width: 5rem;
-            border-radius: 50%;
-          }
-          .carousel-caption {
-            position: initial;
-            max-width: 550px;
-            margin: auto auto;
-            .top {
-              i {
-                color: $color-orange-300;
-                font-size: 2rem;
-              }
-              h1 {
-                @include font-text($font-family-2, 1.5rem, 400, $color-white-100);
-              }
-              p {
-                @include font-text($font-family-2, 1.0rem, 300, $color-gray-100);
-              }
+        .carousel-caption {
+          position: initial;
+          max-width: 550px;
+          margin: auto auto;
+          .top {
+            i {
+              color: $color-orange-300;
+              font-size: 2rem;
             }
-            .bottom {
-              h1 {
-                @include font-text($font-family-2, 1.5rem, 400, $color-white-100);
-              }
-              p {
-                @include font-text($font-family-2, 1.0rem, 300, $color-gray-100);
-              }
+            h1 {
+              @include font-text($font-family-2, 1.5rem, 400, $color-white-100);
+            }
+            p {
+              @include font-text($font-family-2, 1rem, 300, $color-gray-100);
+            }
+          }
+          .bottom {
+            h1 {
+              @include font-text($font-family-2, 1.5rem, 400, $color-white-100);
+            }
+            p {
+              @include font-text($font-family-2, 1rem, 300, $color-gray-100);
             }
           }
         }
       }
     }
   }
+}
 
 footer {
-  max-height: 100%;
-  margin-top: 32px;
+  //   max-height: 100%;
+  //   margin-top: 32px;
   .copy-right {
-    height: 100%;
-    background: #494949;
+    // height: 100%;
+    background: $color-black-100;
     .container {
-      padding: 32px;
+      //   padding: 32px;
       .row {
-        width: 100%;
-        height: 80%;
-        .col-sm {
-          margin-bottom: 16px;
+        // width: 100%;
+        // height: 80%;
+
+        .col {
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+          ul {
+            padding: 0;
+          }
           .submit {
+            margin-bottom: 1rem;
+
             input[type="text"] {
               width: 100%;
               padding: 12px 20px;
@@ -781,26 +794,40 @@ footer {
               border: none;
               border-radius: 4px;
               cursor: pointer;
+              transition: all 0.5s;
+              &:hover {
+                opacity: 0.7;
+              }
             }
           }
+          p {
+            margin-bottom: 2rem;
+            @include font-text($font-family-2, 1rem, 300, $color-gray-100);
+          }
           h4 {
+            @include font-text($font-family-2, 2rem, 400, $color-white-100);
+
+            transition: all 0.5s;
             &:hover {
               color: $color-orange-300;
             }
             color: $color-white-100;
-            margin-top: 80px;
-            font-size: 20px;
+            margin-bottom: 1rem;
+            // margin-top: 80px;
+            // font-size: 20px;
           }
           .contact {
-            margin-top: 32px;
+            margin-top: 0.5rem;
             i {
               margin-right: 8px;
               color: $color-orange-300;
               height: 32px;
               width: 32px;
               padding: 8px;
-              background-color: $color-white-100;
+              background-color: $color-black-300;
               border-radius: 6px;
+              transition: all 0.5s;
+
               &:hover {
                 color: $color-white-100;
                 background-color: $color-orange-300;
@@ -811,7 +838,11 @@ footer {
             line-height: 32px;
             ul {
               list-style-type: none;
+              @include font-text($font-family-2, 1rem, 300, $color-gray-100);
+
               li {
+                transition: all 0.5s;
+
                 &:hover {
                   cursor: pointer;
                   color: $color-orange-300;
@@ -823,6 +854,38 @@ footer {
       }
     }
   }
+
+  .policy {
+    @include font-text($font-family-2, 1rem, 300, $color-gray-100);
+
+    background-color: $color-black-100;
+    border-top: 1px solid $color-gray-100;
+    border-bottom: 1px solid $color-gray-100;
+
+    .left {
+      p {
+        text-align: center;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+      }
+    }
+    .right {
+      text-align: center;
+      margin-bottom: 0.5rem;
+
+      a {
+        text-decoration: none;
+        @include font-text($font-family-2, 1rem, 300, $color-gray-100);
+        margin-right: 2rem;
+        transition: all 0.5s;
+
+        &:hover {
+          color: $color-orange-300;
+        }
+      }
+    }
+  }
+
   .video-bottom {
     text-align: center;
     width: 100%;
