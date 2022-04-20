@@ -9,6 +9,7 @@ body {
   font-size: 16px;
   background-color: $color-black-500;
   @include font-text($font-family-2, 1rem, 400, $color-white-100);
+  scroll-behavior: smooth;
 }
 
 header {
@@ -63,6 +64,13 @@ header {
     transform: translateY(0);
   }
 }
+@for $i from 1 to 8 {
+  .animation-item-#{$i} {
+    animation: fadeInUp 0.8s linear 0.4s * $i;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+}
 .banner {
   background-image: url("/images/banner1.jpg");
   background-position: center center center;
@@ -83,13 +91,6 @@ header {
       max-width: 500px;
       & > * {
         margin-bottom: 2rem;
-      }
-      @for $i from 1 to 4 {
-        .animation-item-#{$i} {
-          animation: fadeInUp 0.8s linear 0.4s * $i;
-          animation-fill-mode: forwards;
-          opacity: 0;
-        }
       }
     }
     a {
