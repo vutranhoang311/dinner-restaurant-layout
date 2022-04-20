@@ -12,6 +12,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   color: #fff;
+  scroll-behavior: smooth;
 }
 
 header {
@@ -86,6 +87,62 @@ header .nav-search-bar nav .fa-navicon:before {
   }
 }
 
+.animation-item-1 {
+  -webkit-animation: fadeInUp 0.8s linear 0.4s;
+          animation: fadeInUp 0.8s linear 0.4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.animation-item-2 {
+  -webkit-animation: fadeInUp 0.8s linear 0.8s;
+          animation: fadeInUp 0.8s linear 0.8s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.animation-item-3 {
+  -webkit-animation: fadeInUp 0.8s linear 1.2s;
+          animation: fadeInUp 0.8s linear 1.2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.animation-item-4 {
+  -webkit-animation: fadeInUp 0.8s linear 1.6s;
+          animation: fadeInUp 0.8s linear 1.6s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.animation-item-5 {
+  -webkit-animation: fadeInUp 0.8s linear 2s;
+          animation: fadeInUp 0.8s linear 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.animation-item-6 {
+  -webkit-animation: fadeInUp 0.8s linear 2.4s;
+          animation: fadeInUp 0.8s linear 2.4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.animation-item-7 {
+  -webkit-animation: fadeInUp 0.8s linear 2.8s;
+          animation: fadeInUp 0.8s linear 2.8s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
 .banner {
   background-image: url("/images/banner1.jpg");
   background-position: center center center;
@@ -111,30 +168,6 @@ header .nav-search-bar nav .fa-navicon:before {
 
 .banner .title .wrap > * {
   margin-bottom: 2rem;
-}
-
-.banner .title .wrap .animation-item-1 {
-  -webkit-animation: fadeInUp 0.8s linear 0.4s;
-          animation: fadeInUp 0.8s linear 0.4s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  opacity: 0;
-}
-
-.banner .title .wrap .animation-item-2 {
-  -webkit-animation: fadeInUp 0.8s linear 0.8s;
-          animation: fadeInUp 0.8s linear 0.8s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  opacity: 0;
-}
-
-.banner .title .wrap .animation-item-3 {
-  -webkit-animation: fadeInUp 0.8s linear 1.2s;
-          animation: fadeInUp 0.8s linear 1.2s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  opacity: 0;
 }
 
 .banner .title a {
