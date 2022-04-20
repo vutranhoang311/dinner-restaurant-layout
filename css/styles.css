@@ -315,6 +315,85 @@ header .nav-search-bar nav .fa-navicon:before {
   color: #ffc600;
 }
 
+.chefs {
+  background-color: #232220;
+}
+
+.chefs .container .title span {
+  font-family: "Pacifico", cursive;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #ff6600;
+}
+
+.chefs .container .title h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+.chefs .container .row.chef .col .item .top {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.chefs .container .row.chef .col .item .top img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.chefs .container .row.chef .col .item .top:hover .social-icon i {
+  visibility: visible;
+  opacity: 0.5;
+}
+
+.chefs .container .row.chef .col .item .top .social-icon {
+  position: absolute;
+  bottom: 10%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.chefs .container .row.chef .col .item .top .social-icon i {
+  background-color: #282828;
+  height: 2rem;
+  width: 2rem;
+  line-height: 2rem;
+  border-radius: 50%;
+  margin-left: 0.25rem;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.chefs .container .row.chef .col .item .top .social-icon i:hover {
+  background-color: #fff;
+  color: #ff6600;
+  opacity: 1;
+}
+
+.chefs .container .row.chef .col .item:hover .chef-info h1 {
+  color: #ff6600;
+}
+
+.chefs .container .row.chef .col .item .chef-info span {
+  font-family: "Oswald", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #c2d0da;
+}
+
+.chefs .container .row.chef .col .item .chef-info h1 {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  font-family: "Oswald", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #fff;
+}
+
 .category {
   padding: 3rem 0;
 }
@@ -1228,5 +1307,70 @@ footer .video-bottom i {
 .backToTop a:hover i {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+}
+
+.contact-us .title span {
+  font-family: "Pacifico", cursive;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #ff6600;
+}
+
+.contact-us .title h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+.contact-us .title p {
+  font-family: "Oswald", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #c2d0da;
+  margin-bottom: 1.5rem;
+}
+
+.contact-us .form {
+  margin-bottom: 3rem;
+}
+
+.contact-us .form .row input,
+.contact-us .form .row textarea {
+  background-color: #282828;
+  border: none;
+  font-family: "Oswald", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #c2d0da;
+}
+
+.contact-us .form .row input:hover, .contact-us .form .row input:focus,
+.contact-us .form .row textarea:hover,
+.contact-us .form .row textarea:focus {
+  border: 1px solid #ff6600;
+}
+
+.contact-us .form .row label {
+  font-family: "Oswald", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #c2d0da;
+}
+
+.contact-us .form .row button {
+  border-radius: 6px;
+  padding: 12px 45px;
+  background: #ff6600;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.contact-us .form .row button:hover {
+  opacity: .6;
 }
 /*# sourceMappingURL=styles.css.map */

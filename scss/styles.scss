@@ -216,6 +216,77 @@ header {
     }
   }
 }
+.chefs {
+  background-color: $color-black-500;
+  .container {
+    .title {
+      span {
+        @include font-text($font-family-1, 1.5rem, 400, $color-orange-300);
+      }
+      h1 {
+        @include font-text($font-family-2, 2.5rem, 400, $color-white-100);
+      }
+    }
+    .row.chef {
+      .col {
+        .item {
+          .top {
+            position: relative;
+            margin-bottom: 1.5rem;
+            img {
+              width: 100%;
+              border-radius: 10px;
+            }
+            &:hover .social-icon i {
+              visibility: visible;
+              opacity: 0.5;
+            }
+            .social-icon {
+              position: absolute;
+              bottom: 10%;
+
+              transition: all 0.5s;
+
+              i {
+                background-color: $color-black-300;
+                height: 2rem;
+                width: 2rem;
+                line-height: 2rem;
+                border-radius: 50%;
+                margin-left: 0.25rem;
+                transition: all 0.5s;
+                opacity: 0;
+                visibility: hidden;
+
+                &:hover {
+                  background-color: $color-white-100;
+                  color: $color-orange-300;
+                  opacity: 1;
+                }
+              }
+            }
+          }
+          &:hover {
+            .chef-info {
+              h1 {
+                color: $color-orange-300;
+              }
+            }
+          }
+          .chef-info {
+            span {
+              @include font-text($font-family-2, 1rem, 300, $color-gray-100);
+            }
+            h1 {
+              transition: all 0.5s;
+              @include font-text($font-family-2, 2rem, 400, $color-white-100);
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
 .category {
   padding: 3rem 0;
@@ -953,6 +1024,47 @@ footer {
       box-shadow: 0.125rem 0.125rem 1rem $color-gray-100;
       i {
         transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+.contact-us {
+  .title {
+    span {
+      @include font-text($font-family-1, 1rem, 400, $color-orange-300);
+    }
+    h1 {
+      @include font-text($font-family-2, 2.5rem, 400, $color-white-100);
+      margin-bottom: 1.5rem;
+    }
+    p {
+      @include font-text($font-family-2, 1rem, 300, $color-gray-100);
+      margin-bottom: 1.5rem;
+    }
+  }
+  .form {
+    margin-bottom: 3rem;
+    .row {
+      input,
+      textarea {
+        background-color: $color-black-300;
+        border: none;
+        @include font-text($font-family-2, 1rem, 300, $color-gray-100);
+        &:hover,
+        &:focus {
+          border: 1px solid $color-orange-300;
+        }
+      }
+      label {
+        @include font-text($font-family-2, 1rem, 300, $color-gray-100);
+      }
+      button {
+        @include button(6px, 12px 45px, $color-orange-300, none, $color-white-100, 700);
+        transition: all .5s;
+        &:hover{
+            opacity: .6;
+        }
       }
     }
   }
