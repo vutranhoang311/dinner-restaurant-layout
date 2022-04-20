@@ -1061,9 +1061,53 @@ footer {
       }
       button {
         @include button(6px, 12px 45px, $color-orange-300, none, $color-white-100, 700);
-        transition: all .5s;
-        &:hover{
-            opacity: .6;
+        @include font-text($font-family-2, 1rem, 500, $color-white-100);
+
+        transition: all 0.5s;
+        &:hover {
+          opacity: 0.6;
+        }
+      }
+    }
+  }
+}
+
+.additional-info {
+  .row {
+    .left {
+      margin-bottom: 2rem;
+      .title {
+        span {
+          @include font-text($font-family-1, 1rem, 400, $color-orange-300);
+        }
+        h1 {
+          @include font-text($font-family-2, 2.5rem, 400, $color-white-100);
+          margin-bottom: 1.5rem;
+        }
+      }
+      .contact-info {
+        & > * {
+          margin-bottom: 1.5rem;
+        }
+        i {
+          color: $color-orange-300;
+        }
+        p {
+          @include font-text($font-family-2, 1rem, 500, $color-white-100);
+          letter-spacing: 0.5px;
+          margin-bottom: 1.5rem;
+        }
+        a {
+          text-decoration: none;
+          letter-spacing: 0.5px;
+
+          @include font-text($font-family-2, 1rem, 300, $color-gray-100);
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+        p + p {
+          @include font-text($font-family-2, 1rem, 300, $color-gray-100);
         }
       }
     }
