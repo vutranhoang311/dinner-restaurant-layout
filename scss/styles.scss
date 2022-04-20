@@ -53,7 +53,16 @@ header {
     }
   }
 }
-
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .banner {
   background-image: url("/images/banner1.jpg");
   background-position: center center center;
@@ -74,6 +83,13 @@ header {
       max-width: 500px;
       & > * {
         margin-bottom: 2rem;
+      }
+      @for $i from 1 to 4 {
+        .animation-item-#{$i} {
+          animation: fadeInUp 0.8s linear 0.4s * $i;
+          animation-fill-mode: forwards;
+          opacity: 0;
+        }
       }
     }
     a {
@@ -905,6 +921,38 @@ footer {
       margin-top: -200px;
       text-align: center;
       background-color: rgba(255, 255, 255, 0.2) !important;
+    }
+  }
+}
+
+.backToTop {
+  a {
+    text-decoration: none;
+    color: $color-gray-100;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    z-index: 100;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    background-color: rgba(255, 102, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+
+    i {
+      transition: all 0.5s;
+    }
+    &:hover {
+      background-color: rgba(255, 102, 0, 0.8);
+
+      transform: translateY(-5%);
+      box-shadow: 0.125rem 0.125rem 1rem $color-gray-100;
+      i {
+        transform: rotate(180deg);
+      }
     }
   }
 }
