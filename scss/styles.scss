@@ -71,6 +71,7 @@ header {
     opacity: 0;
   }
 }
+
 .banner {
   background-image: url("/images/banner1.jpg");
   background-position: center center center;
@@ -93,7 +94,8 @@ header {
         margin-bottom: 2rem;
       }
     }
-    a {
+
+    button {
       @include button(10px, 1rem 3rem, transparent, 2px solid $color-white-100, $color-white-100, 500);
       width: fit-content;
       text-decoration: none;
@@ -113,6 +115,10 @@ header {
         margin-left: 0.8rem;
       }
     }
+    a {
+      text-decoration: none;
+      @include font-text($font-family-2, 1rem, 400, $color-orange-300);
+    }
   }
   .color-overlay {
     background-image: linear-gradient(to right, $color-orange-300, $color-black-400);
@@ -122,6 +128,12 @@ header {
     left: 0;
   }
 }
+.contact-banner {
+  background-image: url("/images/banner2.jpg");
+  height: 50vh;
+  min-height: 300px;
+}
+
 .about-us {
   .row {
     .item {
@@ -1030,6 +1042,7 @@ footer {
 }
 
 .contact-us {
+  padding-top: 2rem;
   .title {
     span {
       @include font-text($font-family-1, 1rem, 400, $color-orange-300);
