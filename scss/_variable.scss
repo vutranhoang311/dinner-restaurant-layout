@@ -39,3 +39,10 @@ $color-200: rgba(22, 28, 45, 0.7);
     margin-top: $mt;
     margin-bottom: $mb;
 }
+
+@mixin dotted {
+    width: 80%;
+    border-bottom: 2px dotted #bbb;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
