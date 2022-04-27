@@ -117,22 +117,22 @@ header .nav-search-bar nav .fa-navicon:before {
   left: 0;
 }
 
-.about-us .row .item {
-  padding: 2rem;
-}
-
-.about-us .row .left .item h1 {
+.about-us .title h1 {
   font-family: "Pacifico", cursive;
   font-size: 1.5rem;
   font-weight: 400;
   color: #ff6600;
 }
 
-.about-us .row .left .item p {
+.about-us .title p {
   font-family: "Oswald", sans-serif;
   font-size: 2.5rem;
   font-weight: 400;
   color: #fff;
+}
+
+.about-us .row .item {
+  margin: 1rem 0;
 }
 
 .about-us .row .left .item img {
@@ -140,12 +140,10 @@ header .nav-search-bar nav .fa-navicon:before {
 }
 
 .about-us .row .right .item {
-  margin-top: 8rem;
   font-family: "Oswald", sans-serif;
   font-size: 1rem;
   font-weight: 300;
   color: #c2d0da;
-  line-height: 2rem;
   letter-spacing: 1px;
 }
 
@@ -154,7 +152,12 @@ header .nav-search-bar nav .fa-navicon:before {
   color: #fff;
 }
 
+.about-us .row .right .item p {
+  margin-top: 1rem;
+}
+
 .about-us .row .right .item button {
+  margin-top: 1rem;
   background-color: #ff6600;
   border: none;
   color: #fff;
@@ -168,16 +171,19 @@ header .nav-search-bar nav .fa-navicon:before {
   margin-left: 8px;
 }
 
-.about-us .foot {
-  text-align: center;
-}
-
-.about-us .foot .row .col-sm .item h5 {
+.about-us .foot .row .col .item h5 {
   color: #ff6600;
 }
 
-.about-us .foot .row .col-sm .item h5:hover {
+.about-us .foot .row .col .item h5:hover {
   color: #ffc107;
+}
+
+.about-us .foot .row .col .item p {
+  font-family: "Oswald", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #c2d0da;
 }
 
 .skills {
@@ -192,18 +198,18 @@ header .nav-search-bar nav .fa-navicon:before {
           justify-content: center;
 }
 
-.skills .container .col-md-7 .item h5 {
+.skills .container .col .item h5 {
   font-family: "Pacifico", cursive;
   font-size: 20px;
   font-weight: 400;
   color: #ff6600;
 }
 
-.skills .container .col-md-7 .item span {
+.skills .container .col .item span {
   font-size: 40px;
 }
 
-.skills .container .col-md-7 .item p {
+.skills .container .col .item p {
   margin-top: 1rem;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
@@ -212,34 +218,47 @@ header .nav-search-bar nav .fa-navicon:before {
   margin-bottom: 3rem;
 }
 
-.skills .container .col-md-7 .item .skill-bar {
+.skills .container .col .item .skill-bar {
   margin-top: 1rem;
 }
 
-.skills .container .col-md-7 .item .skill-bar .bar-text {
+.skills .container .col .item .skill-bar .bar-text {
   font-size: 20px;
 }
 
-.skills .container .col-md-7 .item .skill-bar .bar-text .progress {
+.skills .container .col .item .skill-bar .bar-text .progress {
   margin-bottom: 2rem;
 }
 
-.skills .container .col-md-7 .item .skill-bar .bar-text .progress .progress-bar {
+.skills .container .col .item .skill-bar .bar-text .progress .progress-bar {
   background: #ff6600;
 }
 
-.skills .container .col-md-5 {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  -webkit-column-gap: 1rem;
-          column-gap: 1rem;
+.skills .container .right .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.skills .container .col-md-5 img {
-  max-width: 100%;
-  height: auto;
+.skills .container .right .item .left {
+  width: 48%;
+}
+
+.skills .container .right .item .right {
+  width: 48%;
+}
+
+.skills .container .right .item img {
+  border-radius: 6px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .chefs {
