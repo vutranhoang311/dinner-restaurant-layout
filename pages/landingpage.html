@@ -29,8 +29,10 @@
 
                 <i class="fa-solid fa-sun ms-3 light"></i>
 
-                <nav class="nav ms-3">
-                    <div class="dropdown">
+                <nav class="nav ms-3">    
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#menu-nav">
+                        <i class="fa-solid fa-bars fs-3"></i> </button>
+                    <!-- <div class="dropdown">
                         <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton2"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="fa-solid fa-bars fs-3"></i> </button>
@@ -44,12 +46,35 @@
                             <li><a class="dropdown-item" href="/pages/email.html">Email</a></li>
 
                         </ul>
-                    </div>
+                    </div> -->
                 </nav>
 
             </div>
         </div>
     </header>
+
+    <div class="modal fade" id="menu-nav" tabindex="-1" aria-labelledby="" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content text-center">
+                <div class="modal-footer d-none">
+                </div>
+                <!-- <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                </div> -->
+                <div class="modal-body">
+                    <div class="text-end m-5"><button type="button" class="btn-close1" data-bs-dismiss="modal"
+                        aria-label="Close"><i class="fa fa-times"></i></button></div>
+                    <a class="d-block " href="/index.html">Home</a>
+                    <a class="d-block " href="/pages/about.html">About</a>
+                    <a class="d-block" href="/pages/services.html">Services</a>
+                    <a class="d-block " href="/pages/blog.html">Blog</a>
+                    <a class="d-block active" href="/pages/landingpage.html">Landing Page</a>
+                    <a class="d-block" href="/pages/contact.html">Contact</a>
+                    <a class="d-block" href="/pages/email.html">Email</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <section class="banner wow  d-flex ">
         <div class="title container text-start w-100  h-100">

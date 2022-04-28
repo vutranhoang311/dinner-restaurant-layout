@@ -53,7 +53,35 @@ header {
     }
   }
 }
-
+.modal {
+  a {
+    text-decoration: none;
+    margin-bottom: 1rem;
+    @include font-text($font-family-2, 2rem, 300, $color-white-100);
+    &:hover {
+      color: $color-orange-300;
+    }
+    &.active {
+      color: $color-orange-300;
+    }
+  }
+  .btn-close1 {
+    @include button(0.5rem, 0.5rem 1rem, $color-orange-300, none, $color-white-100, 500);
+  }
+  .modal-content {
+    background-color: transparent;
+    border: none;
+  }
+  @media (min-width: 576px) {
+    .modal-dialog {
+      max-width: 100%;
+      margin: 1.75rem auto;
+    }
+  }
+  .wrap {
+    z-index: 20;
+  }
+}
 .banner {
   background-image: url("../images/banner2.jpg");
   background-position: center center;
@@ -202,11 +230,11 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        .left{
-            width: 48%;
+        .left {
+          width: 48%;
         }
-        .right{
-            width: 48%;
+        .right {
+          width: 48%;
         }
         img {
           border-radius: 6px;

@@ -66,6 +66,48 @@ header .nav-search-bar nav .fa-navicon:before {
   color: #fff;
 }
 
+.modal a {
+  text-decoration: none;
+  margin-bottom: 1rem;
+  font-family: "Oswald", sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.modal a:hover {
+  color: #ff6600;
+}
+
+.modal a.active {
+  color: #ff6600;
+}
+
+.modal .btn-close1 {
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: #ff6600;
+  border: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+.modal .modal-content {
+  background-color: transparent;
+  border: none;
+}
+
+@media (min-width: 576px) {
+  .modal .modal-dialog {
+    max-width: 100%;
+    margin: 1.75rem auto;
+  }
+}
+
+.modal .wrap {
+  z-index: 20;
+}
+
 .banner {
   background-image: url("../images/banner2.jpg");
   background-position: center center;
