@@ -325,6 +325,32 @@ header {
 }
 
 .footer {
+  .policy {
+    @include font-text($font-family-2, 1rem, 300, $color-gray-100);
+    background-color: $color-black-100;
+    border-top: 1px solid $color-gray-100;
+    border-bottom: 1px solid $color-gray-100;
+    .left {
+      p {
+        text-align: center;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+      }
+    }
+    .right {
+      text-align: center;
+      margin-bottom: 0.5rem;
+      a {
+        text-decoration: none;
+        @include font-text($font-family-2, 1rem, 300, $color-gray-100);
+        margin-right: 2rem;
+        transition: all 0.5s;
+        &:hover {
+          color: $color-orange-300;
+        }
+      }
+    }
+  }
   .copy-right {
     // height: 100%;
     background: $color-black-100;

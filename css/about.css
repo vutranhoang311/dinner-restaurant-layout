@@ -382,6 +382,42 @@ header .nav-search-bar nav .fa-navicon:before {
   color: #fff;
 }
 
+.footer .policy {
+  font-family: "Oswald", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #c2d0da;
+  background-color: #000;
+  border-top: 1px solid #c2d0da;
+  border-bottom: 1px solid #c2d0da;
+}
+
+.footer .policy .left p {
+  text-align: center;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer .policy .right {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.footer .policy .right a {
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #c2d0da;
+  margin-right: 2rem;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.footer .policy .right a:hover {
+  color: #ff6600;
+}
+
 .footer .copy-right {
   background: #000;
 }
